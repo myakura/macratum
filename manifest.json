@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
 	"name": "Macratum",
-	"description": "remove duplicate tabs.",
-	"version": "0.0.4",
+	"description": "Close duplicate tabs.",
+	"version": "0.0.5",
 	"author": "Masataka Yakura",
 	"permissions": ["tabs"],
 	"background": {
