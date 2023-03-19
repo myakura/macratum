@@ -20,14 +20,13 @@ function getDuplicateTabIds(data) {
 	return tabIds;
 }
 
-async function removeDuplicateTabIds() {
+async function closeDublicateTabs() {
 	const tabs = await getAllTabsForTheWindow();
 	const tabIds = getDuplicateTabIds(tabs);
 
-	return tabIds;
+	await chrome.tabs.remove(tabIds);
 }
 
 chrome.action.onClicked.addListener(async (req, sender, _) => {
-	const tabIdsToRemove = await removeDuplicateTabIds();
-	await chrome.tabs.remove(tabIdsToRemove);
+	await closeDublicateTabs();
 });
