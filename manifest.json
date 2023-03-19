@@ -2,12 +2,15 @@
 	"manifest_version": 3,
 	"name": "Macratum",
 	"description": "remove duplicate tabs.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"author": "Masataka Yakura",
 	"permissions": ["tabs"],
 	"background": {
 		"service_worker": "macratum_background.js",
 		"type": "module"
 	},
-	"action": {}
+	"action": {},
+	"icons": {
+		"48": "icon.png"
+	}
 }
